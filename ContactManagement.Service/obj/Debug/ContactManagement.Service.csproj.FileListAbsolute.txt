@@ -1,0 +1,15 @@
+D:\AppDev\ContactManagement\ContactManagement.Service\bin\Debug\ContactManagement.Service.dll
+D:\AppDev\ContactManagement\ContactManagement.Service\bin\Debug\ContactManagement.Service.pdb
+D:\AppDev\ContactManagement\ContactManagement.Service\bin\Debug\ContactManagement.Data.dll
+D:\AppDev\ContactManagement\ContactManagement.Service\bin\Debug\ContactManagement.Repository.dll
+D:\AppDev\ContactManagement\ContactManagement.Service\bin\Debug\EntityFramework.dll
+D:\AppDev\ContactManagement\ContactManagement.Service\bin\Debug\ContactManagement.Data.pdb
+D:\AppDev\ContactManagement\ContactManagement.Service\bin\Debug\ContactManagement.Data.dll.config
+D:\AppDev\ContactManagement\ContactManagement.Service\bin\Debug\ContactManagement.Repository.pdb
+D:\AppDev\ContactManagement\ContactManagement.Service\bin\Debug\ContactManagement.Repository.dll.config
+D:\AppDev\ContactManagement\ContactManagement.Service\bin\Debug\EntityFramework.xml
+D:\AppDev\ContactManagement\ContactManagement.Service\obj\Debug\ContactManagement.Service.csprojAssemblyReference.cache
+D:\AppDev\ContactManagement\ContactManagement.Service\obj\Debug\ContactManagement.Service.csproj.CoreCompileInputs.cache
+D:\AppDev\ContactManagement\ContactManagement.Service\obj\Debug\ContactManagement.Service.csproj.CopyComplete
+D:\AppDev\ContactManagement\ContactManagement.Service\obj\Debug\ContactManagement.Service.dll
+D:\AppDev\ContactManagement\ContactManagement.Service\obj\Debug\ContactManagement.Service.pdb
