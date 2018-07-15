@@ -1,24 +1,47 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using Newtonsoft.Json.Serialization;
 using System.Collections.Generic;
-using System.Linq;
+using System.Net.Http.Formatting;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace ContactManagement.Api
 {
-    public static class WebApiConfig
+	public static class WebApiConfig
     {
         public static void Register(HttpConfiguration config)
         {
-            // Web API configuration and services
 
-            // Web API routes
-            config.MapHttpAttributeRoutes();
+			//Use JSON friendly default settings
+			var defaultSettings = new JsonSerializerSettings
+			{
+				Formatting = Formatting.Indented,
+				ContractResolver = new CamelCasePropertyNamesContractResolver(),
+				Converters = new List<JsonConverter> { new StringEnumConverter { CamelCaseText = true }, }
+			};
+			JsonConvert.DefaultSettings = () => { return defaultSettings; };
+			//Specify JSON as the default media type
+			config.Formatters.Clear();
+			config.Formatters.Add(new JsonMediaTypeFormatter());
+			config.Formatters.JsonFormatter.SerializerSettings = defaultSettings;
+
+
+			// Web API configuration and services
+
+			// Web API routes
+			config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
-        }
+
+			var enableCorsAttribute = new EnableCorsAttribute("*",
+											   "Origin, Content-Type, Accept, Content-Type, Access-Control-Allow-Origin, Access-Control-Allow-Methods",
+											   "GET, PUT, POST, DELETE, OPTIONS");
+			config.EnableCors(enableCorsAttribute);
+		}
     }
 }

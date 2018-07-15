@@ -1,0 +1,79 @@
+<div class="row">
+  <h3>Contact - Edit</h3>
+</div>
+
+<div class="row">
+  <form [formGroup]="contactForm" (ngSubmit)="updateContact(contactForm.value, contactForm.valid)">
+    <input type="hidden" formControlName="id">
+    <input type="hidden" formControlName="status">
+
+    <div class="form-group">
+      <label for="firstName">First Name*</label>
+      <input type="text" class="form-control" formControlName="firstName" placeholder="Enter First Name">
+
+      <div class="text-danger" *ngIf="(firstName.touched || firstName.dirty) && !firstName.valid">
+        <small *ngIf="firstName.errors.required">
+          First name is required.
+        </small>
+        <small *ngIf="firstName.errors.minlength">
+          First name should be minimum {{firstName.errors.minlength.requiredLength}}.
+        </small>
+        <small *ngIf="firstName.errors.pattern">
+          Invalid first name.
+        </small>
+      </div>
+
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name*</label>
+      <input type="text" class="form-control" formControlName="lastName" placeholder="Enter Last Name">
+      <div class="text-danger" *ngIf="(lastName.touched || lastName.dirty) && !lastName.valid">
+        <small *ngIf="lastName.errors.required">
+          Last name is required.
+        </small>
+        <small *ngIf="lastName.errors.minlength">
+          Last name should be minimum {{lastName.errors.minlength.requiredLength}}.
+        </small>
+        <small *ngIf="lastName.errors.pattern">
+          Invalid last name.
+        </small>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email*</label>
+      <input type="email" class="form-control" formControlName="email" placeholder="Enter email">
+
+      <div class="text-danger" *ngIf="(email.touched || email.dirty) && !email.valid">
+        <small *ngIf="email.errors.required">
+          Email is required.
+        </small>
+        <small *ngIf="email.errors.pattern">
+          Invalid email.
+        </small>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="phoneNumber">Phone Number*</label>
+      <input type="text" class="form-control" formControlName="phoneNumber" placeholder="Enter Phone Number">
+      <div class="text-danger" *ngIf="(phoneNumber.touched || phoneNumber.dirty) && !phoneNumber.valid">
+        <small *ngIf="phoneNumber.errors.required">
+          Phone is required.
+        </small>
+        <small *ngIf="phoneNumber.errors.pattern">
+          Invalid phone Number.
+        </small>
+      </div>
+    </div>
+
+    <div class="row pull-right" style="margin-bottom: 10px;">
+      <div class="pull-right buttons">
+        <a class="btn btn-dark btn-sm pull-right" [routerLink]="['/contact']"> Cancel</a>
+        <button type="submit" class="btn btn-warning btn-sm pull-right" style="margin-right:5px;" [disabled]="!contactForm.valid"> Save</button>
+      </div>
+    </div>
+
+  </form>
+</div>

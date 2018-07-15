@@ -90,3 +90,6 @@ D:\AppDev\ContactManagement\ContactManagement.Api\bin\roslyn\Microsoft.Managed.C
 D:\AppDev\ContactManagement\ContactManagement.Api\bin\roslyn\System.IO.Pipes.AccessControl.dll
 D:\AppDev\ContactManagement\ContactManagement.Api\bin\EntityFramework.SqlServer.dll
 D:\AppDev\ContactManagement\ContactManagement.Api\bin\EntityFramework.SqlServer.xml
+D:\AppDev\ContactManagement\ContactManagement.Api\bin\System.Web.Cors.dll
+D:\AppDev\ContactManagement\ContactManagement.Api\bin\System.Web.Http.Cors.dll
+D:\AppDev\ContactManagement\ContactManagement.Api\bin\System.Web.Http.Cors.xml

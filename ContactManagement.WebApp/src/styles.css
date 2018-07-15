@@ -1,1 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
+main.container {
+margin-bottom:60px;
+}
+
+.footer {
+  position: fixed !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  text-align: center !important;
+  color: white;
+}
+
+.form-control.ng-touched.ng-invalid {
+  border-color: red;
+}
+
+.pagination-status {
+  display: block;
+  margin: 15px 5px 0 0;
+  border-right: 1px solid #CCC;
+  padding: 0 5px;
+  height: 30px;
+}
+.pagination-result {
+  display: block;
+  margin: 15px 5px 0 0;
+  padding: 0 5px;
+}
+
+/************ SPINNER AND ALERT NOTIFICATION ************/
+.app-loading {
+  background-color: white;
+  z-index: 99999999;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  opacity: 0.7;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+  .app-loading .spinner {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    z-index: 99999;
+    height: 70px;
+    width: 70px;
+    margin-left: -16px;
+    margin-top: -16px;
+  }
+
+.notify {
+  z-index: 1040;
+  left: 0px;
+  right: 0px;
+  top: 10px;
+  position: absolute;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/************ SPINNER AND ALERT NOTIFICATION END ************/

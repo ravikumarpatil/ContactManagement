@@ -52,7 +52,14 @@
     <Content Include="angular.json" />
     <Content Include="e2e\tsconfig.e2e.json" />
     <Content Include="package.json" />
+    <Content Include="src\app\contact\contact-add\contact-add.component.css" />
+    <Content Include="src\app\contact\contact-add\contact-add.component.html" />
+    <Content Include="src\app\contact\contact-edit\contact-edit.component.css" />
+    <Content Include="src\app\contact\contact-edit\contact-edit.component.html" />
+    <Content Include="src\app\contact\contact-index\contact-index.component.css" />
+    <Content Include="src\app\contact\contact-index\contact-index.component.html" />
     <Content Include="src\assets\.gitkeep" />
+    <Content Include="src\assets\images\loading.gif" />
     <Content Include="src\browserslist" />
     <Content Include="src\tsconfig.app.json" />
     <Content Include="src\tsconfig.spec.json" />
@@ -72,9 +79,35 @@
   <ItemGroup>
     <TypeScriptCompile Include="e2e\src\app.e2e-spec.ts" />
     <TypeScriptCompile Include="e2e\src\app.po.ts" />
+    <TypeScriptCompile Include="src\app\app-preload-strategy.ts" />
+    <TypeScriptCompile Include="src\app\app-route.module.spec.ts" />
+    <TypeScriptCompile Include="src\app\app-route.module.ts" />
     <TypeScriptCompile Include="src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\app\contact\contact-add\contact-add.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\contact\contact-add\contact-add.component.ts" />
+    <TypeScriptCompile Include="src\app\contact\contact-edit\contact-edit.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\contact\contact-edit\contact-edit.component.ts" />
+    <TypeScriptCompile Include="src\app\contact\contact-index\contact-index.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\contact\contact-index\contact-index.component.ts" />
+    <TypeScriptCompile Include="src\app\contact\contact-ruote\contact-ruote.module.spec.ts" />
+    <TypeScriptCompile Include="src\app\contact\contact-ruote\contact-ruote.module.ts" />
+    <TypeScriptCompile Include="src\app\contact\contact.module.spec.ts" />
+    <TypeScriptCompile Include="src\app\contact\contact.module.ts" />
+    <TypeScriptCompile Include="src\app\_entities\contact.ts" />
+    <TypeScriptCompile Include="src\app\_entities\error-information.ts" />
+    <TypeScriptCompile Include="src\app\_error-handlers\custom-error-handler.ts" />
+    <TypeScriptCompile Include="src\app\_guards\auth-guard.ts" />
+    <TypeScriptCompile Include="src\app\_Interceptors\header-interceptor.ts" />
+    <TypeScriptCompile Include="src\app\_services\contact.service.spec.ts" />
+    <TypeScriptCompile Include="src\app\_services\contact.service.ts" />
+    <TypeScriptCompile Include="src\app\_services\loader.service.spec.ts" />
+    <TypeScriptCompile Include="src\app\_services\loader.service.ts" />
+    <TypeScriptCompile Include="src\app\_services\notification.service.spec.ts" />
+    <TypeScriptCompile Include="src\app\_services\notification.service.ts" />
+    <TypeScriptCompile Include="src\app\_services\table.service.spec.ts" />
+    <TypeScriptCompile Include="src\app\_services\table.service.ts" />
     <TypeScriptCompile Include="src\environments\environment.prod.ts" />
     <TypeScriptCompile Include="src\environments\environment.ts" />
     <TypeScriptCompile Include="src\main.ts" />
@@ -84,6 +117,7 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
