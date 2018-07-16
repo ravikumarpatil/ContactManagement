@@ -2,6 +2,7 @@
 
 This is a test project used to store contact information. In this project Web API 2.0 used for server side implementation and Angular 6 for front end. This project has repository pattern and dependency injection have implemeneted. Also used Entity framework 6.0 Database first approch.
 As sample project I have not implemeneted the authentication and authorization.
+Also Added Swagger (Swashbuckle) for API help documentation.
 
 ## Getting Started
 
@@ -64,8 +65,8 @@ Now environment for web api and angular project is set.
 ### Running the application
 
 In visual studio open solution explorer, Right click on ContactManagement\ContactManagement.Api  project and set it as startup project.
-Press F5 key. As home page is not created, Browser will show HTTP Error 403.14 - Forbidden error page but it is fine.
-Keep the application running and observe the api url. It should look like. 
+Press F5 key. As home page(welcome page) is not created, so redirected to Swagger UI http://localhost:57443/swagger/ui/index  (This is web api help page here you can click on Contact link and explore the contact api request and response).
+Keep the application running and observe the api base url. Base url should look like. 
 
 ```
 http://localhost:57443/

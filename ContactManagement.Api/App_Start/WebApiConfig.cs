@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
+using Swashbuckle.Application;
 using System.Collections.Generic;
 using System.Net.Http.Formatting;
 using System.Web.Http;
@@ -37,6 +38,14 @@ namespace ContactManagement.Api
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+			// Redirect root to Swagger UI
+			config.Routes.MapHttpRoute(
+				name: "Swagger UI",
+				routeTemplate: "",
+				defaults: null,
+				constraints: null,
+				handler: new RedirectHandler(SwaggerDocsConfig.DefaultRootUrlResolver, "swagger/ui/index"));
 
 			var enableCorsAttribute = new EnableCorsAttribute("*",
 											   "Origin, Content-Type, Accept, Content-Type, Access-Control-Allow-Origin, Access-Control-Allow-Methods",
