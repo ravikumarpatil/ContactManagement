@@ -76,10 +76,10 @@ export class ContactIndexComponent implements OnInit {
     if (this.filterKey !== '') {
       this.filteredData = this.contacts.filter(function (e) {
         return (
-          (e.FirstName && e.FirstName.toLowerCase().indexOf(this.filterKey.toLowerCase()) > -1) ||
-          (e.LastName && e.LastName.toLowerCase().indexOf(this.filterKey.toLowerCase()) > -1) ||
-          (e.Email && e.Email.toLowerCase().indexOf(this.filterKey.toLowerCase()) > -1) ||
-          (e.PhoneNumber && e.PhoneNumber.toLowerCase().indexOf(this.filterKey.toLowerCase()) > -1)
+          (e.firstname && e.firstname.toLowerCase().indexOf(this.filterKey.toLowerCase()) > -1) ||
+          (e.lastname && e.lastname.toLowerCase().indexOf(this.filterKey.toLowerCase()) > -1) ||
+          (e.email && e.email.toLowerCase().indexOf(this.filterKey.toLowerCase()) > -1) ||
+          (e.phonenumber && e.phonenumber.toLowerCase().indexOf(this.filterKey.toLowerCase()) > -1)
         );
       }.bind(this));
 
