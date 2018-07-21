@@ -13,7 +13,7 @@
 </nav>
 <!-- Nav End -->
 
-<main role="main" class="container">
+<main role="main" class="container-fluid">
     <ngb-alert class="notify container" *ngIf="notificationService.show ==true" [type]="notificationService.type" (close)="notificationService.hideNotification()">
       <div *ngFor="let msg of notificationService.message;">
         <div>{{msg.message}}</div>

@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-main.container {
+.container {
 margin-bottom:60px;
+}
+.page-item.active .page-link {
+z-index:0 !important;
 }
 
 .footer {
@@ -28,7 +31,9 @@ margin-bottom:60px;
   margin: 15px 5px 0 0;
   padding: 0 5px;
 }
-
+.action-buttons-separator {
+  margin: 0 8px;
+}
 /************ SPINNER AND ALERT NOTIFICATION ************/
 .app-loading {
   background-color: white;

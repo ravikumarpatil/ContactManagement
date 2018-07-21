@@ -16,7 +16,7 @@ export class NotificationService {
         this.message = arr;
         setTimeout(() => {
             this.hideNotification();
-        }, 10000);
+        }, 5000);
     }
 
     public showNotificationWithoutTimeout(message: string, type: NotificationType) {
